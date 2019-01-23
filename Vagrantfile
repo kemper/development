@@ -5,10 +5,10 @@ Vagrant.configure('2') do |config|
   end
 
   config.cache.scope = :box
-  config.vm.box      = 'ubuntu/zesty64'
-  config.vm.box_version = "20171111.0.0"
+  config.vm.box      = 'bento/ubuntu-18.04'
+  config.vm.box_version = "201812.27.0"
   config.vm.hostname = 'development-box'
-  config.vm.synced_folder ".", "/home/ubuntu/development"
+  config.vm.synced_folder ".", "/home/vagrant/development"
 
   config.vm.provision :shell, path: 'setup/bootstrap.sh', keep_color: true, privileged: false
 
