@@ -3,3 +3,7 @@
 rails
 projects
 kindlegen
+.sudo_as_admin_successful
+.bash_history
+.viminfo
+.cache
